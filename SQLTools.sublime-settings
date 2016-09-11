@@ -195,7 +195,7 @@
                 "desc" : {
                     "query": ".headers off\nSELECT '|' || name || '|' FROM sqlite_master WHERE type='table';",
                     "options": [],
-                    "format" : "|%s|"
+                    "format" : "%s"
                 },
                 "desc table": {
                     "query": ".schema \"%s\"",
@@ -205,7 +205,7 @@
                 "show records": {
                     "query": "select * from \"%s\" limit 100;",
                     "options": ["-column"],
-                    "format" : "|%s|"
+                    "format" : "%s"
                 }
             }
         },
